@@ -1,0 +1,426 @@
+@media (max-width: 1200px) {
+    .header {
+        &__btn {
+            width: 160px;
+            font-size: 18px;
+        }
+    }
+
+    .menu {
+        &__list-item+&__list-item {
+            margin-left: 28px;
+        }
+
+        &__list-link {
+            font-size: 18px;
+        }
+    }
+
+    .freelancers {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__img {
+            order: 1;
+            display: flex;
+
+        }
+
+        &__text {
+            align-self: flex-end;
+            text-align: start;
+        }
+
+        &__title {}
+
+        &__sticker {
+            &--big {
+                right: auto;
+                left: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 30px 0;
+
+        &__btn {
+            display: none;
+        }
+    }
+
+    .promo {
+        &__img {
+            display: none;
+        }
+    }
+
+    .form {
+        margin-top: 30px;
+    }
+
+    .menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        padding: 30px;
+        background-color: rgba(30, 136, 229, 1);
+        height: 100vh;
+        overflow-y: auto;
+        width: 60%;
+        max-width: 264px;
+        transform: translateX(-100%);
+        transition: transform .5s ease-in-out;
+
+        &--visible {
+            transform: none;
+        }
+
+        &__list {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__list-item {
+            width: 100%;
+        }
+
+        &__list-item+&__list-item {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        &__list-link {
+            font-size: 24px;
+            color: #FFFF;
+            width: 100%;
+            display: inline-block;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .panel {
+        top: -280px;
+
+        &__box {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        &__item+&__item {
+            margin-left: 0;
+        }
+
+        &__descr {
+            max-width: 255px;
+        }
+    }
+
+    .freelancers {
+        margin-top: 150px;
+    }
+
+    .carousel {
+        margin-top: 120px;
+
+        &__top {
+            display: block;
+        }
+
+        &__nav {
+            margin-top: 20px;
+        }
+
+        &__bottom {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__card+&__card {
+            margin-left: 0;
+        }
+
+        &__card {
+            max-width: 372px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    .footer {
+        &__inner {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        }
+
+
+    }
+}
+
+@media(max-width: 874px) {
+    .freelancers {
+        margin-top: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        &__body {
+            flex-direction: column;
+        }
+
+        &__title {
+            max-width: 100%;
+            font-size: 55px;
+            line-height: 88px;
+        }
+
+        &__descr {
+            max-width: 100%;
+        }
+    }
+
+    .form {
+        flex-direction: column;
+
+        &__btn {
+            width: 100%;
+        }
+
+        &__btn-search {
+            top: 60%;
+        }
+
+        &__box {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        &__input {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    .footer {
+        margin-top: 120px;
+    }
+
+}
+
+@media (max-width: 689px) {
+    .footer {
+        &__inner {
+            text-align: center;
+            justify-items: center;
+        }
+
+        &__info {
+            align-items: center;
+        }
+
+        &__clients-list {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 674px) {
+    .freelancers {
+        &__img {
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                display: none;
+            }
+        }
+
+        &__sticker {
+            position: static;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 634px) {
+    .panel {
+        &__item+&__item {
+            margin-top: 20px;
+        }
+    }
+
+    .freelancers {
+        margin-top: 600px;
+
+        &__text {
+            align-self: flex-start;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        img {
+            max-width: 80%;
+        }
+    }
+
+    .promo {
+
+        &__title {
+            font-size: 45px;
+            line-height: 68px;
+        }
+
+        &__decsr {
+            font-size: 22px;
+            line-height: 34px;
+        }
+    }
+
+    .form {
+
+        &__btn,
+        &__input {
+            font-size: 22px;
+            line-height: 34px;
+        }
+    }
+
+    .panel {
+        &__title {
+            font-size: 24px;
+        }
+
+        &__descr {
+            font-size: 20px;
+        }
+    }
+
+    .freelancers {
+        margin-top: 650px;
+
+        &__title {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        &__descr {
+            font-size: 22px;
+            line-height: 34px;
+        }
+    }
+
+    .carousel {
+        margin-top: 60px;
+
+        &__subtitle {
+            font-size: 28px;
+            line-height: 48px;
+        }
+
+        &__title {
+            font-size: 56px;
+            line-height: 84px;
+        }
+
+        &__nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        &__bottom {
+            margin-top: 20px;
+        }
+    }
+
+    .footer {
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        .copyright {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .promo {
+        &__title {
+            font-size: 40px;
+            line-height: 62px;
+        }
+
+        &__descr {
+            font-size: 22px;
+            line-height: 34px;
+        }
+
+        .form {
+
+            &__btn,
+            &__input {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .freelancers {
+        &__title {
+            font-size: 40px;
+            line-height: 62px;
+        }
+    }
+
+    .carousel {
+        &__title {
+            font-size: 40px;
+            line-height: 62px;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .footer {
+        &__descr {
+            max-width: 80%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .promo {
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .freelancers {
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .carousel {
+
+        &__title,
+        &__subtitle {
+            text-align: center;
+        }
+    }
+}
